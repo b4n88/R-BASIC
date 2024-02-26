@@ -1,7 +1,7 @@
 ## Membaca data di R
-
-
-
+# Aksess CSV
+Data_corelation = read.csv("D:/R/1 DATA SET/Korelatio test/Uji Korelasi.csv", header = T, sep = ";")
+# Aksess XL
 
 
 ## Mengedit data di R
