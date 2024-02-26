@@ -11,6 +11,9 @@ data <- data %>%mutate(Nomor_Baris = row_number())
 ## Menghapus Variable
 Data_corelation_final = Data_corelation %>% select(-No, -ID, -Date)
 
+## Merubah type data
+data = mutate
+
 ## Mengedit data di R
 # Mengambil hanya kolom ke-2 (Store_id) dan ke-3 (Store_Type) menggunakan tanda $
 kolom_terpilih <- dataset[, c("Store_id", "Store_Type")]
