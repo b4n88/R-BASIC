@@ -2,7 +2,7 @@
 # Aksess CSV
 Data_corelation = read.csv("D:/R/1 DATA SET/Korelatio test/Uji Korelasi.csv", header = T, sep = ";")
 # Aksess XL
-
+data_new = read_excel("C:/Users/Administrator/Downloads/22 Jan 24 Tanya Lebih Reg.xlsx", sheet = "Awoakowk")
 
 ## Mengedit data di R
 # Mengambil hanya kolom ke-2 (Store_id) dan ke-3 (Store_Type) menggunakan tanda $
