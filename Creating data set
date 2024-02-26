@@ -22,6 +22,9 @@ kolom_terpilih <- dataset %>% select(Store_id, Store_Type, Location_Type, Region
 # Memindahkan variable
 data_new = data_new %>% select(No, everything()) 			>> Mengatur posisi Nomor baris ke depan
 data_new = data_new %>% select(`KD TOKO`, No, everything()) 	>> Mengatur posisi Nomor sesuai ke inginan
+Sintaks di atas jika variable memiliki spasi wajib mnggunakn backtics `.
+
+
 
 
 
