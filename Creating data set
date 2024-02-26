@@ -1,0 +1,18 @@
+## Membaca data di R
+
+
+
+
+
+## Mengedit data di R
+# Mengambil hanya kolom ke-2 (Store_id) dan ke-3 (Store_Type) menggunakan tanda $
+kolom_terpilih <- dataset[, c("Store_id", "Store_Type")]
+kolom_terpilih <- dataset %>% select(Store_id, Store_Type)
+
+# Mengambil semua kolom kecuali yang memiliki nama "ID" menggunakan dplyr::select
+kolom_terpilih <- dataset %>% select(-contains("ID"))
+
+# Mengambil variable tertentu saja
+kolom_terpilih <- dataset %>% select(Store_id, Store_Type, Location_Type, Region_Code)
+
+# Menambahkan data variable baru
