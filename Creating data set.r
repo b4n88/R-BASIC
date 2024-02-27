@@ -27,6 +27,11 @@ data_new = data_new %>% select(No, everything()) 			>> Mengatur posisi Nomor bar
 data_new = data_new %>% select(`KD TOKO`, No, everything()) 	>> Mengatur posisi Nomor sesuai ke inginan
 Sintaks di atas jika variable memiliki spasi wajib mnggunakn backtics `.
 
+## Data Duplicate
+# Cek data duplicate
+tess_dupluicate = tess[duplicated(tess) | duplicated(tess, fromLast = TRUE), ]
+# Menghapus data duplicate
+df_no_duplicates <- df[!duplicated(df) & !duplicated(df, fromLast = TRUE), ]
 
 
 
