@@ -11,10 +11,7 @@ data <- data %>%mutate(Nomor_Baris = row_number())
 ## Menghapus Variable
 Data_corelation_final = Data_corelation %>% select(-No, -ID, -Date)
 
-## Merubah type data
-data = mutate
-
-## Mengedit data di R
+## Mengambil Variable
 # Mengambil hanya kolom ke-2 (Store_id) dan ke-3 (Store_Type) menggunakan tanda $
 kolom_terpilih <- dataset[, c("Store_id", "Store_Type")]
 kolom_terpilih <- dataset %>% select(Store_id, Store_Type)
@@ -26,6 +23,12 @@ kolom_terpilih <- dataset %>% select(Store_id, Store_Type, Location_Type, Region
 data_new = data_new %>% select(No, everything()) 			>> Mengatur posisi Nomor baris ke depan
 data_new = data_new %>% select(`KD TOKO`, No, everything()) 	>> Mengatur posisi Nomor sesuai ke inginan
 Sintaks di atas jika variable memiliki spasi wajib mnggunakn backtics `.
+
+
+## Merubah type data
+Data_corelation$Store_Type = as.factor(Data_corelation$Store_Type)      > as.numeric., as.integaer.
+Data_corelation_final_sekali <- mutate_all(Data_corelation_final, as.numeric)
+Data_corelation$sales = as.numeric(gsub(",", "", Data_corelation$sales))
 
 ## Data Duplicate
 # Cek data duplicate
