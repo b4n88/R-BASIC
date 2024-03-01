@@ -14,4 +14,4 @@ output:
 https://prettydoc.statr.me/index.html
 Options code_folding, code_download and toc_float are not applicable.
 
-
+https://github.com/juba/rmdformats/blob/master/vignettes/examples/downcute_chaos.Rmd
