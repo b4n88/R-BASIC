@@ -1,3 +1,4 @@
+# Membuat data one way anova
 set.seed(123)  # Untuk reproduktibilitas
 data <- data.frame(
   Dosis = rep(c("Dosis Rendah", "Dosis Sedang", "Dosis Tinggi"), each = 50),
