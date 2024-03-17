@@ -1,3 +1,9 @@
+# Membangkitkan angka dengan sample
+data_sample <- sample(1:100, 50, replace = TRUE)  
+
+Memilih 50 angka acak dari 1 hingga 100 dengan penggantian
+replace = true artinya boleh berulang
+---------------------------------------------------------------------------------------------------------------------
 # membangkitkan angka dengan runif
 runif adalah Membuat dataset dengan angka acak yang berdistribusi seragam
 data_set = round(runif(50, min =10, max =45),3)
@@ -8,11 +14,15 @@ min dan max adalah parameternya.
 ---------------------------------------------------------------------------------------------------------------------
 # Membangkitkan angka dengan rnorm
 rnorm adalah Membuat dataset dengan angka acak yang berdistribusi normal
+data_normal <- rnorm(100, mean = 0, sd = 1)
+
+100 = amatan
+mean dan sd adalah parameter = bisa di ubah sesuai kebutuhan, misalnya dalam ribu, mean = 50000, sd = 100000
 
 ---------------------------------------------------------------------------------------------------------------------
-# Membangkitkan angka dengan rnorm
+# Membangkitkan angka dengan rpois
 rpois adalahh Membuat dataset dengan angka acak yang berdistribusi Poisson
-
+data_poisson <- rpois(100, lambda = 3)
 
 ---------------------------------------------------------------------------------------------------------------------
 # Membuat data set Regresi linear sederhana
