@@ -1,3 +1,19 @@
+# Membuat data set Regresi linear sederhana
+set.seed(123)
+Jam_belajar = round(runif(50, min =10, max=40))
+Nilai_ujian = round(Jam_belajar*2+rnorm(50, mean = 0, sd =5),2)
+
+Data_regsederhana = data.frame(Jam_belajar, Nilai_ujian)
+
+---------------------------------------------------------------------------------------------------------------------
+# Membuat data set Regresi linear Berganda
+
+
+---------------------------------------------------------------------------------------------------------------------
+# Membuat data set Regresi Logistik
+
+
+---------------------------------------------------------------------------------------------------------------------
 # Membuat data one way anova
 set.seed(123)  # Untuk reproduktibilitas
 data <- data.frame(
