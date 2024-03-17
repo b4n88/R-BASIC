@@ -1,11 +1,17 @@
 # membangkitkan angka dengan runif
+runif adalah Membuat dataset dengan angka acak yang berdistribusi seragam
+data_set = round(runif(50, min =10, max =45),3)
 
+round = membuat angka desimal terlihat angka 3, maka akan membuat 3 angka di belakang koma.
+50 = adalah jumlah n (amatan)
+min dan max adalah parameternya.
+---------------------------------------------------------------------------------------------------------------------
+# Membangkitkan angka dengan rnorm
+rnorm adalah Membuat dataset dengan angka acak yang berdistribusi normal
 
 ---------------------------------------------------------------------------------------------------------------------
 # Membangkitkan angka dengan rnorm
-
----------------------------------------------------------------------------------------------------------------------
-
+rpois adalahh Membuat dataset dengan angka acak yang berdistribusi Poisson
 
 
 ---------------------------------------------------------------------------------------------------------------------
