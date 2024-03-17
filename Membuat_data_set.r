@@ -5,6 +5,12 @@ Nilai_ujian = round(Jam_belajar*2+rnorm(50, mean = 0, sd =5),2)
 
 Data_regsederhana = data.frame(Jam_belajar, Nilai_ujian)
 
+Atau bisa juga dengan cara
+
+Data_regsederhana2nd = data.frame( Jam_belajar = round(runif(50, min =10, max=40)),
+                                   Nilai_ujian = round(Jam_belajar*2+rnorm(50, mean =0, sd =5),2)
+  )
+
 ---------------------------------------------------------------------------------------------------------------------
 # Membuat data set Regresi linear Berganda
 
